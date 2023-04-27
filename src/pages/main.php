@@ -31,7 +31,7 @@
             <a href="pages/guitars/1.html">FLIGHT F-230C NA</a>
           </td>
           <td class="table-guitar-type">
-            <a href="pages/types/acoustic.html"><img class="rounded" src="/images/types/acoustic.jpg" alt="FLIGHT F-230C NA">
+            <a href="pages/types/acoustic.html"><img class="rounded" src="/public/images/types/acoustic.jpg" alt="FLIGHT F-230C NA">
               <p>Акустическая</p>
             </a>
           </td>
@@ -42,7 +42,7 @@
             <a href="pages/guitars/3.html">IBANEZ GRG121DX-BKF</a>
           </td>
           <td class="table-guitar-type">
-            <a href="pages/types/electro.html"><img class="rounded" src="/images/types/electro.jpg" alt="guitar">
+            <a href="pages/types/electro.html"><img class="rounded" src="/public/images/types/electro.jpg" alt="guitar">
               <p>Электрогитара</p>
             </a>
           </td>
@@ -53,7 +53,7 @@
             <a href="pages/guitars/7.html">Denn DCG390</a>
           </td>
           <td class="table-guitar-type">
-            <a href="pages/types/classic.html"><img class="rounded" src="/images/types/classic.jpg" alt="FLIGHT F-230C NA">
+            <a href="pages/types/classic.html"><img class="rounded" src="/public/images/types/classic.jpg" alt="FLIGHT F-230C NA">
               <p>Классическая</p>
             </a>
           </td>

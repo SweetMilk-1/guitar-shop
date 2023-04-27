@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light header-container">
       <div class="container-fluid">
         <a href="index.html" class="logo">
-          <img src="/images/logo.png" alt="icon">
+          <img src="/public/images/logo.png" alt="icon">
           <p>Gitarshop</p>
         </a>
         <button
