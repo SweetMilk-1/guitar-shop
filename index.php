@@ -18,7 +18,7 @@
   <?php include_once("./templates/header.php")?>
     
   <?php
-    include "./src/pages/guitar.php"
+    include "./src/pages/main.php"
   ?>
 
   <?php include_once("./templates/footer.php")?>

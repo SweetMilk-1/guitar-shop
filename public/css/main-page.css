@@ -41,3 +41,19 @@
   font-weight: bold;
   font-size: 16pt;
 }
+
+.table-pagination {
+  justify-content: space-around;
+  width: 500px;
+  margin: 15px auto;
+
+}
+
+.table-pagination-item *{
+  font-size: 1.5em;
+  padding: 4px;
+}
+
+.table-pagination-item-current {
+  background-color: rgba(0,0,0, .15);
+}

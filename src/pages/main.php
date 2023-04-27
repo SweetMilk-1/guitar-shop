@@ -1,3 +1,15 @@
+<?php
+require_once '/OSPanel/domains/guitar-shop/src/database/repositories/guitar-repository.php';
+
+$page = (int)$_GET["page"] ?? 0;
+$limit = (int)$_GET["limit"] == 0 ? 5 : (int)$_GET["limit"];
+
+$guitars = get_all_guitars($page, $limit);
+
+$guitars_cnt = get_guitars_cnt();
+?>
+
+
 <div class="description-section">
   <div class="container description-container">
     <h1>Гитара</h1>
@@ -13,7 +25,6 @@
   </div>
 </div>
 
-<!--Таблица-->
 <div class="table-section">
   <div class="container table-container">
     <h2>Справочник гитар с сайта Muztorg.ru</h2>
@@ -26,40 +37,72 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="table-guitar-title">
-            <a href="pages/guitars/1.html">FLIGHT F-230C NA</a>
-          </td>
-          <td class="table-guitar-type">
-            <a href="pages/types/acoustic.html"><img class="rounded" src="/public/images/types/acoustic.jpg" alt="FLIGHT F-230C NA">
-              <p>Акустическая</p>
-            </a>
-          </td>
-          <td class="table-guitar-price">11 360 руб.</td>
-        </tr>
-        <tr>
-          <td class="table-guitar-title">
-            <a href="pages/guitars/3.html">IBANEZ GRG121DX-BKF</a>
-          </td>
-          <td class="table-guitar-type">
-            <a href="pages/types/electro.html"><img class="rounded" src="/public/images/types/electro.jpg" alt="guitar">
-              <p>Электрогитара</p>
-            </a>
-          </td>
-          <td class="table-guitar-price">11 360 руб.</td>
-        </tr>
-        <tr>
-          <td class="table-guitar-title">
-            <a href="pages/guitars/7.html">Denn DCG390</a>
-          </td>
-          <td class="table-guitar-type">
-            <a href="pages/types/classic.html"><img class="rounded" src="/public/images/types/classic.jpg" alt="FLIGHT F-230C NA">
-              <p>Классическая</p>
-            </a>
-          </td>
-          <td class="table-guitar-price">11 360 руб.</td>
-        </tr>
+
+        <?php
+        foreach ($guitars as $item) {
+          $name = $item["name"];
+          $price = $item["price"];
+          $name = $item["name"];
+          $type_id = $item["type_id"];
+          $type_name = $item["type_name"];
+          $type_path_image = $item["type_path_image"];
+        ?>
+
+          <tr>
+            <td class="table-guitar-title">
+              <a href="#">
+                <?php echo $name ?>
+              </a>
+            </td>
+            <td class="table-guitar-type">
+              <a href="#"><img class="rounded" src="/public/<?php echo $type_path_image ?>" alt="вид">
+                <p>
+                  <?php echo $type_name ?>
+                </p>
+              </a>
+            </td>
+            <td class="table-guitar-price">
+              <?php echo $price ?> руб.
+            </td>
+          </tr>
+
+        <?php } ?>
+
       </tbody>
     </table>
+    <div class="d-flex table-pagination">
+
+      <?php
+      $pages_cnt = (int)(($guitars_cnt + $limit - 1) / $limit);
+
+      $left = $page - 1;
+      $right = $page + 1;
+
+      $skip = false;
+
+      for ($i = 0; $i < $pages_cnt; $i++) {
+        if ($i != 0 && ($i < $left || $i > $right) && $i != $pages_cnt - 1) {
+          if (!$skip) {
+            echo "<div class=\"table-pagination-item\">
+                      <a href=\"#\">...</a>
+                    </div>";
+            $skip = true;
+          }
+          continue;
+        }
+        $skip = false;
+        $href = "/?page=$i&limit=$limit";
+      ?>
+        <div class="table-pagination-item <?php if ($page==$i) echo "table-pagination-item-current"?>">
+          <a href="<?php echo $href ?>">
+            <?php echo $i + 1 ?>
+          </a>
+        </div>
+
+
+      <?php
+      }
+      ?>
+    </div>
   </div>
 </div>
