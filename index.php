@@ -17,9 +17,7 @@
 <body>
   <?php include_once("./templates/header.php");?>
     
-  <div class="container">
-    <h1>Здесь мой контент</h1>
-  </div>
+  <?php include_once("./pages/main.php")?>
 
   <?php include_once("./templates/footer.php");?>
 </body>
