@@ -12,7 +12,7 @@
   <link rel="icon" href="favicon.ico">
 
   <script src="./templates/libs/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
-
+ 
 </head>
 <body>
   <?php include_once("./templates/header.php");?>
