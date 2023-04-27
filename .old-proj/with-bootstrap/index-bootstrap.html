@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage (Bootstrap)</title>
+    <link
+      rel="stylesheet"
+      href="libs/bootstrap-5.0.1-dist/css/bootstrap.min.css"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/_common.css" >
+    <link rel="stylesheet" href="css/main-page.css" >
+    
+  </head>
+  <body>
+    <!--Навигация-->
+
+    <div class="header-section">
+      <div class="container ">
+        <nav class="navbar navbar-expand-lg navbar-light header-container">
+          <div class="container-fluid">
+            <a href="index.html" class="logo">
+              <img src="img/guitar-logo.png" alt="icon">
+              <p>Gitarshop</p>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Переключатель навигации"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="pages/types/acoustic.html"
+                  >Акустическая</a
+                >
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="pages/types/electro.html"
+                  >Электрогитара</a
+                >
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="pages/types/uculele.html"
+                  >Укулеле</a
+                >
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="pages/types/classic.html"
+                  >Классическая</a
+                >
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="pages/types/bass.html"
+                  >Бас-гитара</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--Описание-->
+    <div class="description-section">
+      <div class="container description-container">
+        <h1>Гитара</h1>
+        <p>
+          Гита́ра — струнный щипковый музыкальный инструмент. Применяется в
+          качестве аккомпанирующего или сольного инструмента во многих стилях и
+          направлениях музыки, среди которых романс, блюз, кантри, фламенко,
+          рок, джаз. Изобретённая в XX веке электрическая гитара произвела
+          значительные изменения в музыке и тем самым оказала сильное влияние на
+          массовую культуру. Также есть классическая гитара, гитара фламенко,
+          испанская гитара и некоторые другие виды.
+        </p>
+      </div>
+    </div>
+
+    <!--Таблица-->
+    <div class="table-section">
+      <div class="container table-container">
+        <h2>Справочник гитар с сайта Muztorg.ru</h2>
+        <table class="table table-hover">
+          <thead>
+            <tr class="table-guitar-header">
+              <th>Название</th>
+              <th>Тип</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-guitar-title">
+                <a href="pages/guitars/1.html">FLIGHT F-230C NA</a>
+              </td>
+              <td class="table-guitar-type">
+                <a href="pages/types/acoustic.html"
+                  ><img
+                    class="rounded"
+                    src="img/type-acoustic.jpg"
+                    alt="FLIGHT F-230C NA"
+                  >
+                  <p>Акустическая</p>
+                </a>
+              </td>
+              <td class="table-guitar-price">11 360 руб.</td>
+            </tr>
+            <tr>
+              <td class="table-guitar-title">
+                <a href="pages/guitars/3.html">IBANEZ GRG121DX-BKF</a>
+              </td>
+              <td class="table-guitar-type">
+                <a href="pages/types/electro.html"
+                  ><img
+                    class="rounded"
+                    src="img/type-electro.jpg"
+                    alt="guitar"
+                  >
+                  <p>Электрогитара</p>
+                </a>
+              </td>
+              <td class="table-guitar-price">11 360 руб.</td>
+            </tr>
+            <tr>
+              <td class="table-guitar-title">
+                <a href="pages/guitars/7.html">Denn DCG390</a>
+              </td>
+              <td class="table-guitar-type">
+                <a href="pages/types/classic.html"
+                  ><img
+                    class="rounded"
+                    src="img/type-classic.jpg"
+                    alt="FLIGHT F-230C NA"
+                  >
+                  <p>Классическая</p>
+                </a>
+              </td>
+              <td class="table-guitar-price">11 360 руб.</td>
+            </tr>
+            <tr>
+              <td class="table-guitar-title">
+                <a href="pages/guitars/12.html">IBANEZ GSR200B-WNF</a>
+              </td>
+              <td class="table-guitar-type">
+                <a href="pages/types/Ukulele.html"
+                  ><img
+                    class="rounded"
+                    src="img/type-uculele.jpg"
+                    alt="FLIGHT F-230C NA"
+                  >
+                  <p>Укулеле</p>
+                </a>
+              </td>
+              <td class="table-guitar-price">11 360 руб.</td>
+            </tr>
+            <tr>
+              <td class="table-guitar-title">
+                <a href="pages/guitars/11.html"
+                  >KALA KA-15S Kala Mahogany Soprano Ukulele No Binding</a
+                >
+              </td>
+              <td class="table-guitar-type">
+                <a href="pages/types/bass.html"
+                  ><img
+                    class="rounded"
+                    src="img/type-bass.jpg"
+                    alt="FLIGHT F-230C NA"
+                  >
+                  <p>Бас-гитара</p>
+                </a>
+              </td>
+              <td class="table-guitar-price">11 360 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!--Подвал-->
+    <footer class="footer-section">
+      <div class="container footer-container">
+        <a href="https://vk.com/andreysmolyov">Андрей</a>
+        <p>&#169; 2023. Все права защищены</p>
+      </div>
+    </footer>
+    <script src="libs/bootstrap-5.0.1-dist/js/bootstrap.js"></script>
+  </body>
+</html>

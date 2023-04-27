@@ -1,0 +1,129 @@
+.guitar-form {
+  padding: 30px;
+  margin: 10px auto;
+  background-color: var(--card-bg-color);
+}
+
+.guitar-form-title {
+  font-family: inherit;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  box-shadow: 0 0 2px 2px  rgba(0, 0, 0, .1);
+}
+
+.guitar-form-description {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+.form-row {
+  background-color: inherit;
+  margin-bottom: 10px;
+}
+
+.guitar-form-select-list {
+  display: block;
+  margin-bottom: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+  border-radius: 5px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+}
+
+.guitar-form-select-list::-ms-expand {
+  display: none;
+}
+
+.guitar-form-select-list:hover {
+  border-color: #888;
+}
+
+.guitar-form-select-list:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+.guitar-form-select-list option {
+  font-weight: normal;
+}
+
+.input__wrapper {
+  margin-bottom: 10px;
+  background-color: inherit;
+  box-sizing: border-box;
+}
+
+.input {
+  display: none;
+}
+
+.file-btn {
+  max-width: 200px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box; 
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 4px rgba(0,0,0, .2);
+  background-color: var(--main-color);
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.file-btn:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+  opacity: .8;
+  color: inherit;
+}
+
+.file-btn-label {
+  text-align: center;
+}
+
+.guitar-upload-icon {
+  width: 1.7em;
+}
+
+
+.guitar-form-submit {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.guitar-form-submit:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, .4);
+  opacity: .8;
+  color: inherit;
+}

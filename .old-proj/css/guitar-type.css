@@ -1,0 +1,17 @@
+.guitar-types-images {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.guitar-type-img {
+  width: 300px;
+  margin: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0,  .4);
+}
+
+.guitar-type-desc *{
+  margin-top: 45px;
+  font-size: 1.2em;
+}

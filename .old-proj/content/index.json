@@ -1,0 +1,84 @@
+{
+  "TitleH1": "Гитара",
+  "Text": "Гита́ра — струнный щипковый музыкальный инструмент. Применяется в качестве аккомпанирующего или сольного инструмента во многих стилях и направлениях музыки, среди которых романс, блюз, кантри, фламенко, рок, джаз. Изобретённая в XX веке электрическая гитара произвела значительные изменения в музыке и тем самым оказала сильное влияние на массовую культуру. Также есть классическая гитара, гитара фламенко, испанская гитара и некоторые другие виды.",
+  "TableTitle": "Справочник гитар с сайта Muztorg.ru",
+  "Columns": [
+    "Название", 
+    "Тип",         
+    "Цена"
+    ],
+  "Data": [
+    {
+      "Title": "FLIGHT F-230C NA",
+      "Type": "Акустическая",
+      "Img": "img/guitar_1.jpeg",
+      "Price": "11 360"
+    },
+    {
+      "Title": "ROCKDALE Aurora D1 C BK",
+      "Type": "Акустическая",
+      "Img": "img/guitar_2.jpg",
+      "Price": "7 700"
+    },
+    {
+      "Title": "IBANEZ GRG121DX-BKF",
+      "Type": "Электрогитара",
+      "Img": "img/guitar_3.jpg",
+      "Price": "23 000"
+    },
+    {
+      "Title": "IBANEZ GRX70QA-TRB",
+      "Type": "Электрогитара",
+      "Img": "img/guitar_4.jpg",
+      "Price": "22 400"
+    },
+    {
+      "Title": "FENDER SQUIER Affinity 2021 Stratocaster HH LRL Olympic White",
+      "Type": "Электрогитара",
+      "Img": "img/guitar_5.jpeg",
+      "Price": "37 000"
+    },
+    {
+      "Title": "VESTON C-45A BK",
+      "Type": "Классическая",
+      "Img": "img/guitar_6.jpg",
+      "Price": "6 620"
+    },
+    {
+      "Title": "Denn DCG390",
+      "Type": "Классическая",
+      "Img": "img/guitar_7.jpg",
+      "Price": "4 667"
+    },
+    {
+      "Title": "ROCKDALE Modern Classic 100-N 3/4",
+      "Type": "Классическая",
+      "Img": "img/guitar_8.jpg",
+      "Price": "5 523"
+    },
+    {
+      "Title": "LAVA ME 2 Acoustic White",
+      "Type": "Акустическая",
+      "Img": "img/guitar_9.jpg",
+      "Price": "56 000"
+    },
+    {
+      "Title": "FENDER PLAYER Stratocaster PF 3-Tone Sunburst",
+      "Type": "Электрогитара",
+      "Img": "img/guitar_10.jpg",
+      "Price": "98 000"
+    },
+    {
+      "Title": "KALA KA-15S Kala Mahogany Soprano Ukulele No Binding",
+      "Type": "Укулеле",
+      "Img": "img/guitar_11.jpg",
+      "Price": "4 500"
+    },
+    {
+      "Title": "IBANEZ GSR200B-WNF",
+      "Type": "Бас-гитара",
+      "Img": "img/guitar_12.jpg",
+      "Price": "25 500"
+    }
+  ]
+}

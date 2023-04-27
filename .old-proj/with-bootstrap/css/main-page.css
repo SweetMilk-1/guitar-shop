@@ -1,0 +1,43 @@
+.description-section {
+  padding: 30px
+}
+
+.description-container {
+  padding: 0 50px;
+}
+
+.table-guitar-header th{
+  text-align: center;
+}
+
+.table-guitar-title {
+  font-size: 16pt;
+  text-align: center;
+}
+
+.table-guitar-title a { 
+  text-decoration: none;
+}
+
+.table-guitar-type {
+  text-align: center;
+}
+
+.table-guitar-type img{
+  width: 80px;
+}
+
+.table-guitar-type a{
+  text-decoration: none;
+  color: black;
+}
+
+.table-guitar-type p {
+  margin-bottom: 0;
+}
+
+.table-guitar-price {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16pt;
+}

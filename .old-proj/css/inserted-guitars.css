@@ -1,0 +1,33 @@
+.display-toggle {
+  display: none;
+}
+
+.inserted-guitars {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inserted-nomer {
+  width:3%
+}
+
+.inserted-title {
+  width:10%
+}
+
+.inserted-description {
+  width:62%
+}
+
+.inserted-type {
+  width:15%
+}
+
+.inserted-file {
+  width:10%
+}
+
+.inserted-guitars td {
+  text-align: center;
+}
+
