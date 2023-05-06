@@ -1,8 +1,9 @@
 <?php
-require_once '/OSPanel/domains/guitar-shop/src/database/repositories/guitar-repository.php';
+require_once 'src/database/repositories/guitar-repository.php';
 
 $page = (int)$_GET["page"] ?? 0;
-$limit = (int)$_GET["limit"] == 0 ? 5 : (int)$_GET["limit"];
+$limit = (int)$_GET["limit"] <= 0 ? 5 : (int)$_GET["limit"];
+$page = ($page + 1) * $limit > $guitars_cnt ? 0 : $page;
 
 $guitars = get_all_guitars($page, $limit);
 
@@ -40,6 +41,7 @@ $guitars_cnt = get_guitars_cnt();
 
         <?php
         foreach ($guitars as $item) {
+          $guitar_id = $item["id"];
           $name = $item["name"];
           $price = $item["price"];
           $name = $item["name"];
@@ -50,7 +52,7 @@ $guitars_cnt = get_guitars_cnt();
 
           <tr>
             <td class="table-guitar-title">
-              <a href="#">
+              <a href="/guitar?guitar_id=<?php echo $guitar_id ?>">
                 <?php echo $name ?>
               </a>
             </td>
@@ -93,12 +95,12 @@ $guitars_cnt = get_guitars_cnt();
         $skip = false;
         $href = "/?page=$i&limit=$limit";
       ?>
-        <div class="table-pagination-item <?php if ($page==$i) echo "table-pagination-item-current"?>">
+
+        <div class="table-pagination-item <?php if ($page == $i) echo "table-pagination-item-current" ?>">
           <a href="<?php echo $href ?>">
             <?php echo $i + 1 ?>
           </a>
         </div>
-
 
       <?php
       }

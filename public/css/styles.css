@@ -1,4 +1,5 @@
-@import url("./_common.css");
-@import url("./main-page.css");
-@import url("./object.css");
-@import url("./type.css");
+@import url("public/css/_common.css");
+@import url("public/css/main-page.css");
+@import url("public/css/object.css");
+@import url("public/css/type.css");
+@import url("public/css/insert-guitar-form.css");

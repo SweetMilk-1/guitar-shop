@@ -1,9 +1,9 @@
 <?php
-  require_once "/OSPanel/domains/guitar-shop/src/database/repositories/guitar-repository.php";
+  require_once "src/database/repositories/guitar-repository.php";
   $guitar_id=$_GET["id"];
   $item=get_guitar_by_id((int)$guitar_id);
   if ($item == null) {
-    include_once "errors/404.php";
+    include_once "src/pages/errors/404.php";
     return;
   }
 

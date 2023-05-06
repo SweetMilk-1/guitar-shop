@@ -37,3 +37,16 @@ t WHERE t.num BETWEEN $start AND $end");
   $cursor->setFetchMode(PDO::FETCH_ASSOC);
   return $cursor->fetchAll();
 }
+function insert_guitar($data) {
+  $conn = get_connection();
+  $name=$data["name"];
+  $description=$data["description"];
+  $price=$data["price"];
+  $type_id=$data["type_id"];
+  $file_name=$data["file"];
+
+  $cursor = $conn->prepare("INSERT INTO guitars(name, description, path_image, type_id, price) 
+  VALUES ('$name', '$description', '/images/guitars/$file_name', $type_id, $price)");
+  $cursor->execute();
+}
+?>
