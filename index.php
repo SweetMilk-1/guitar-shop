@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/public/css/styles.css">
   <link rel="stylesheet" href="/public/libs/bootstrap-5.0.1-dist/css/bootstrap.min.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="/public/favicon.ico">
 
   <script src="/public/libs/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
 

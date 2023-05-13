@@ -10,13 +10,9 @@ class InsertGuitar extends Command
         $target_path = $_SERVER['DOCUMENT_ROOT'] . "/public/images/guitars/" . $file_name;
         if (is_uploaded_file($_FILES['file']['tmp_name'])) {
           $guitarRepos=new GuitarRepos();
-          print_r("OK -1\n");
           $guitar_id=$guitarRepos->insert($_POST);
-          print_r("OK 0\n");
           $ext=$_POST["FILE_EXTENSION"];
-          print_r("OK 1\n");
           $target_path = $_SERVER['DOCUMENT_ROOT'] . "/public/images/guitars/guitar_$guitar_id.$ext";
-          print_r("OK 2\n");
           if (move_uploaded_file($_FILES['file']['tmp_name'], $target_path)){
             header("Location: http://guitar-shop/guitar/?guitar_id=$guitar_id");
             exit();
